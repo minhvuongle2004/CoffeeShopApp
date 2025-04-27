@@ -48,7 +48,7 @@ namespace CoffeeShopApp.ServicesUser
             // Load hình ảnh từ đường dẫn
             try
             {
-                string imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, menu.Image);
+                string imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, menu.Image); 
                 if (File.Exists(imagePath))
                 {
                     panel.BackgroundImage = Image.FromFile(imagePath);
