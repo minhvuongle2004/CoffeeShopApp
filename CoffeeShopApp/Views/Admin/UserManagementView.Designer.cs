@@ -220,7 +220,7 @@
             this.lbMatKhau.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMatKhau.Location = new System.Drawing.Point(0, 0);
             this.lbMatKhau.Name = "lbMatKhau";
-            this.lbMatKhau.Size = new System.Drawing.Size(91, 27);
+            this.lbMatKhau.Size = new System.Drawing.Size(72, 22);
             this.lbMatKhau.TabIndex = 5;
             this.lbMatKhau.Text = "Mật khẩu";
             // 
@@ -253,7 +253,7 @@
             this.lbTenDangNhap.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTenDangNhap.Location = new System.Drawing.Point(0, 0);
             this.lbTenDangNhap.Name = "lbTenDangNhap";
-            this.lbTenDangNhap.Size = new System.Drawing.Size(133, 27);
+            this.lbTenDangNhap.Size = new System.Drawing.Size(106, 22);
             this.lbTenDangNhap.TabIndex = 4;
             this.lbTenDangNhap.Text = "Tên đăng nhập";
             // 
@@ -286,7 +286,7 @@
             this.lbHoTen.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHoTen.Location = new System.Drawing.Point(0, 0);
             this.lbHoTen.Name = "lbHoTen";
-            this.lbHoTen.Size = new System.Drawing.Size(68, 27);
+            this.lbHoTen.Size = new System.Drawing.Size(55, 22);
             this.lbHoTen.TabIndex = 3;
             this.lbHoTen.Text = "Họ tên";
             // 
@@ -313,7 +313,7 @@
             "Nhân viên"});
             this.cbVaiTro.Location = new System.Drawing.Point(0, 22);
             this.cbVaiTro.Name = "cbVaiTro";
-            this.cbVaiTro.Size = new System.Drawing.Size(261, 35);
+            this.cbVaiTro.Size = new System.Drawing.Size(261, 30);
             this.cbVaiTro.TabIndex = 7;
             // 
             // lbVaiTro
@@ -323,7 +323,7 @@
             this.lbVaiTro.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVaiTro.Location = new System.Drawing.Point(0, 0);
             this.lbVaiTro.Name = "lbVaiTro";
-            this.lbVaiTro.Size = new System.Drawing.Size(66, 27);
+            this.lbVaiTro.Size = new System.Drawing.Size(53, 22);
             this.lbVaiTro.TabIndex = 6;
             this.lbVaiTro.Text = "Vai trò";
             // 
@@ -356,7 +356,7 @@
             this.lbSDT.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSDT.Location = new System.Drawing.Point(0, 0);
             this.lbSDT.Name = "lbSDT";
-            this.lbSDT.Size = new System.Drawing.Size(118, 27);
+            this.lbSDT.Size = new System.Drawing.Size(95, 22);
             this.lbSDT.TabIndex = 7;
             this.lbSDT.Text = "Số điện thoại";
             // 
@@ -498,7 +498,7 @@
             // 
             // UserManagementView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(966, 588);
             this.Controls.Add(this.tableLayoutPanel1);

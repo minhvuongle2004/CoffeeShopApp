@@ -32,11 +32,11 @@
             // 
             // OrderUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(220)))), ((int)(((byte)(205)))));
             this.Name = "OrderUC";
-            this.Size = new System.Drawing.Size(1069, 554);
+            this.Size = new System.Drawing.Size(802, 450);
             this.ResumeLayout(false);
 
         }

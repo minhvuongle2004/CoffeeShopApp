@@ -455,7 +455,7 @@ namespace CoffeeShopApp.Views.Admin
                 File.Copy(sourcePath, destinationPath, true);
 
                 // Trả về đường dẫn tương đối để lưu vào database
-                return Path.Combine("image", fileName);
+                return Path.Combine("image/", fileName);
             }
             catch (Exception ex)
             {

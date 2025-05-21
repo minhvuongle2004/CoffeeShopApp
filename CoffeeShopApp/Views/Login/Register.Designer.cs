@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.pnlRegister = new System.Windows.Forms.Panel();
+            this.txtFullname = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             this.lnkLogin = new System.Windows.Forms.LinkLabel();
             this.btnRegister = new System.Windows.Forms.Button();
             this.txtConfirmPassword = new System.Windows.Forms.TextBox();
@@ -36,8 +38,6 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.picUser = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtPhone = new System.Windows.Forms.TextBox();
-            this.txtFullname = new System.Windows.Forms.TextBox();
             this.pnlRegister.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +60,30 @@
             this.pnlRegister.Name = "pnlRegister";
             this.pnlRegister.Size = new System.Drawing.Size(322, 492);
             this.pnlRegister.TabIndex = 0;
+            // 
+            // txtFullname
+            // 
+            this.txtFullname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtFullname.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFullname.ForeColor = System.Drawing.Color.Gray;
+            this.txtFullname.Location = new System.Drawing.Point(30, 150);
+            this.txtFullname.Multiline = true;
+            this.txtFullname.Name = "txtFullname";
+            this.txtFullname.Size = new System.Drawing.Size(262, 32);
+            this.txtFullname.TabIndex = 1;
+            this.txtFullname.Text = "FULL NAME";
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPhone.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.ForeColor = System.Drawing.Color.Gray;
+            this.txtPhone.Location = new System.Drawing.Point(30, 350);
+            this.txtPhone.Multiline = true;
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(262, 32);
+            this.txtPhone.TabIndex = 5;
+            this.txtPhone.Text = "PHONE";
             // 
             // lnkLogin
             // 
@@ -113,7 +137,7 @@
             this.txtPassword.ForeColor = System.Drawing.Color.Gray;
             this.txtPassword.Location = new System.Drawing.Point(30, 250);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(262, 32);
+            this.txtPassword.Size = new System.Drawing.Size(262, 20);
             this.txtPassword.TabIndex = 3;
             this.txtPassword.Text = "PASSWORD";
             // 
@@ -142,36 +166,14 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Minion Pro SmBd", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(60, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(201, 26);
             this.label1.TabIndex = 8;
             this.label1.Text = "ĐĂNG KÝ TÀI KHOẢN";
-            // 
-            // txtPhone
-            // 
-            this.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPhone.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhone.ForeColor = System.Drawing.Color.Gray;
-            this.txtPhone.Location = new System.Drawing.Point(30, 350);
-            this.txtPhone.Multiline = true;
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(262, 32);
-            this.txtPhone.TabIndex = 5;
-            this.txtPhone.Text = "PHONE";
-            // 
-            // txtFullname
-            // 
-            this.txtFullname.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtFullname.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFullname.ForeColor = System.Drawing.Color.Gray;
-            this.txtFullname.Location = new System.Drawing.Point(30, 150);
-            this.txtFullname.Multiline = true;
-            this.txtFullname.Name = "txtFullname";
-            this.txtFullname.Size = new System.Drawing.Size(262, 32);
-            this.txtFullname.TabIndex = 1;
-            this.txtFullname.Text = "FULL NAME";
             // 
             // Register
             // 

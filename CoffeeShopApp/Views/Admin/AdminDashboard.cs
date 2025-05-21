@@ -60,6 +60,11 @@ namespace CoffeeShopApp.Views.Admin
             ActivateButton((Button)sender);
             LoadForm(new BillManagementView()); 
         }
+        private void btnShift_Click(object sender, EventArgs e)
+        {
+            ActivateButton((Button)sender);
+            LoadForm(new ShiftManagementView());
+        }
         private void LoadForm(Form frm)
         {
             panelMain.Controls.Clear();
@@ -79,6 +84,7 @@ namespace CoffeeShopApp.Views.Admin
             currentButton = button;
             currentButton.BackColor = Color.FromArgb(192, 192, 255); // Màu cam sáng (có thể đổi)
         }
+
 
     }
 }

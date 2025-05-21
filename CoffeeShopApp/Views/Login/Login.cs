@@ -178,9 +178,9 @@ namespace CoffeeShopApp.Views.Login
                     }
                     else if (loggedInUser.Role.ToLower() == "cashier" || loggedInUser.Role.ToLower() == "staff")
                     {
-                        // Chuyển đến trang Employee View và truyền thông tin người dùng
-                        Views.User.EmployeeView employeeView = new Views.User.EmployeeView(loggedInUser);
-                        employeeView.Show();
+                        // Chuyển đến trang ChonCaForm 
+                        Views.User.ChonCaForm chonCaForm = new Views.User.ChonCaForm(loggedInUser);
+                        chonCaForm.Show();
                         this.Hide();
                     }
                     else

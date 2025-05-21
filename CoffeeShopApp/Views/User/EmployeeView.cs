@@ -13,7 +13,7 @@ namespace CoffeeShopApp.Views.User
         public EmployeeView()
         {
             InitializeComponent();
-            LoadUserControl(new HomeUC());
+            LoadUserControl(new ThongKeUC());
         }
         public CoffeeShopAPI.Models.User CurrentUser { get; private set; }
 
@@ -22,7 +22,11 @@ namespace CoffeeShopApp.Views.User
         {
             InitializeComponent();
             _currentUser = user;
-            LoadUserControl(new HomeUC());
+
+            // Tạo ThongKeUC và thiết lập user
+            ThongKeUC thongKeUc = new ThongKeUC();
+            thongKeUc.SetCurrentUser(user); // Dùng phương thức mới
+            LoadUserControl(thongKeUc);
 
             // Hiển thị fullname của người dùng lên label
             if (_currentUser != null && !string.IsNullOrEmpty(_currentUser.Fullname))
@@ -33,12 +37,14 @@ namespace CoffeeShopApp.Views.User
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new HomeUC());
+            ThongKeUC thongKeUc = new ThongKeUC();
+            thongKeUc.SetCurrentUser(_currentUser);
+            LoadUserControl(thongKeUc);
         }
 
         private void btnOrder_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new OrderUC());
+            LoadUserControl(new OrderUC(this));
         }
 
         private void btnSodo_Click(object sender, EventArgs e)
@@ -52,10 +58,12 @@ namespace CoffeeShopApp.Views.User
             uc.Dock = DockStyle.Fill;
             panelContent.Controls.Add(uc);
         }
+
         public void ShowSoDoUC()
         {
             LoadUserControl(new SoDoUC(this));
         }
+
         private void picCloudSync_Click(object sender, EventArgs e)
         {
             // Xử lý sự kiện click vào nút đồng bộ cloud nếu cần

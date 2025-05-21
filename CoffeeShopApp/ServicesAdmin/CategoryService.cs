@@ -25,7 +25,7 @@ namespace CoffeeShopApp.Services
         }
 
         public async Task<List<Category>> GetAllCategoriesAsync()
-        {
+        { 
             try
             {
                 HttpResponseMessage response = await _client.GetAsync("api/category/getAll");

@@ -67,6 +67,7 @@
             // flowCategory
             // 
             this.flowCategory.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flowCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(242)))), ((int)(((byte)(235)))));
             this.flowCategory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowCategory.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowCategory.Location = new System.Drawing.Point(3, 3);
@@ -168,26 +169,30 @@
             // 
             // btnDatMon
             // 
+            this.btnDatMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnDatMon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnDatMon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDatMon.Font = new System.Drawing.Font("Minion Pro", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDatMon.Location = new System.Drawing.Point(206, 0);
+            this.btnDatMon.Location = new System.Drawing.Point(172, 0);
             this.btnDatMon.Name = "btnDatMon";
-            this.btnDatMon.Size = new System.Drawing.Size(108, 48);
+            this.btnDatMon.Size = new System.Drawing.Size(142, 48);
             this.btnDatMon.TabIndex = 1;
             this.btnDatMon.Text = "Thu tiền";
-            this.btnDatMon.UseVisualStyleBackColor = true;
+            this.btnDatMon.UseVisualStyleBackColor = false;
             this.btnDatMon.Click += new System.EventHandler(this.btnDatMon_Click);
             // 
             // btnHuyHoaDon
             // 
+            this.btnHuyHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnHuyHoaDon.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnHuyHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHuyHoaDon.Font = new System.Drawing.Font("Minion Pro", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuyHoaDon.Location = new System.Drawing.Point(0, 0);
             this.btnHuyHoaDon.Name = "btnHuyHoaDon";
-            this.btnHuyHoaDon.Size = new System.Drawing.Size(206, 48);
+            this.btnHuyHoaDon.Size = new System.Drawing.Size(172, 48);
             this.btnHuyHoaDon.TabIndex = 0;
             this.btnHuyHoaDon.Text = "🗑 Hủy hóa đơn";
-            this.btnHuyHoaDon.UseVisualStyleBackColor = true;
+            this.btnHuyHoaDon.UseVisualStyleBackColor = false;
             this.btnHuyHoaDon.Click += new System.EventHandler(this.btnHuyHoaDon_Click);
             // 
             // OrderView
@@ -220,7 +225,7 @@
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Button btnDatMon;
         private System.Windows.Forms.Button btnHuyHoaDon;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelCartItem;
+        public System.Windows.Forms.TableLayoutPanel tableLayoutPanelCartItem;
         private System.Windows.Forms.Label lb_table;
     }
 }

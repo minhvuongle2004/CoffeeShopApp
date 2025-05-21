@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.panelSidebar = new System.Windows.Forms.Panel();
-            this.panelHeader = new System.Windows.Forms.Panel();
-            this.panelMain = new System.Windows.Forms.Panel();
+            this.btnShift = new System.Windows.Forms.Button();
+            this.btnTable = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.btnUser = new System.Windows.Forms.Button();
+            this.btnCategory = new System.Windows.Forms.Button();
+            this.btnInventory = new System.Windows.Forms.Button();
+            this.panelUser = new System.Windows.Forms.Panel();
             this.ptbUser = new System.Windows.Forms.PictureBox();
             this.lbUser = new System.Windows.Forms.Label();
-            this.panelUser = new System.Windows.Forms.Panel();
-            this.btnInventory = new System.Windows.Forms.Button();
-            this.btnCategory = new System.Windows.Forms.Button();
-            this.btnUser = new System.Windows.Forms.Button();
-            this.btnMenu = new System.Windows.Forms.Button();
-            this.btnSession = new System.Windows.Forms.Button();
-            this.btnTable = new System.Windows.Forms.Button();
+            this.panelHeader = new System.Windows.Forms.Panel();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.btnBill = new System.Windows.Forms.Button();
             this.panelSidebar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbUser)).BeginInit();
             this.panelUser.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbUser)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSidebar
             // 
             this.panelSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.panelSidebar.Controls.Add(this.btnShift);
             this.panelSidebar.Controls.Add(this.btnBill);
             this.panelSidebar.Controls.Add(this.btnTable);
-            this.panelSidebar.Controls.Add(this.btnSession);
             this.panelSidebar.Controls.Add(this.btnMenu);
             this.panelSidebar.Controls.Add(this.btnUser);
             this.panelSidebar.Controls.Add(this.btnCategory);
@@ -63,23 +63,123 @@
             this.panelSidebar.Size = new System.Drawing.Size(250, 668);
             this.panelSidebar.TabIndex = 0;
             // 
-            // panelHeader
+            // btnShift
             // 
-            this.panelHeader.BackColor = System.Drawing.Color.LightGray;
-            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHeader.Location = new System.Drawing.Point(250, 0);
-            this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(811, 100);
-            this.panelHeader.TabIndex = 0;
+            this.btnShift.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnShift.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnShift.FlatAppearance.BorderSize = 0;
+            this.btnShift.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShift.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShift.ForeColor = System.Drawing.Color.White;
+            this.btnShift.Location = new System.Drawing.Point(0, 540);
+            this.btnShift.Name = "btnShift";
+            this.btnShift.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnShift.Size = new System.Drawing.Size(250, 60);
+            this.btnShift.TabIndex = 10;
+            this.btnShift.Text = "🕒 Ca làm việc";
+            this.btnShift.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnShift.UseVisualStyleBackColor = false;
+            this.btnShift.Click += new System.EventHandler(this.btnShift_Click);
             // 
-            // panelMain
+            // btnTable
             // 
-            this.panelMain.BackColor = System.Drawing.Color.White;
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(250, 100);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(811, 568);
-            this.panelMain.TabIndex = 1;
+            this.btnTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnTable.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTable.FlatAppearance.BorderSize = 0;
+            this.btnTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTable.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTable.ForeColor = System.Drawing.Color.White;
+            this.btnTable.Location = new System.Drawing.Point(0, 420);
+            this.btnTable.Name = "btnTable";
+            this.btnTable.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnTable.Size = new System.Drawing.Size(250, 60);
+            this.btnTable.TabIndex = 8;
+            this.btnTable.Text = "📋 Bàn";
+            this.btnTable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTable.UseVisualStyleBackColor = false;
+            this.btnTable.Click += new System.EventHandler(this.btnTable_Click);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMenu.FlatAppearance.BorderSize = 0;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.ForeColor = System.Drawing.Color.White;
+            this.btnMenu.Location = new System.Drawing.Point(0, 360);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnMenu.Size = new System.Drawing.Size(250, 60);
+            this.btnMenu.TabIndex = 6;
+            this.btnMenu.Text = "🍽 Menu";
+            this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // btnUser
+            // 
+            this.btnUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnUser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUser.FlatAppearance.BorderSize = 0;
+            this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUser.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUser.ForeColor = System.Drawing.Color.White;
+            this.btnUser.Location = new System.Drawing.Point(0, 300);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnUser.Size = new System.Drawing.Size(250, 60);
+            this.btnUser.TabIndex = 5;
+            this.btnUser.Text = "👤 Nhân viên";
+            this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUser.UseVisualStyleBackColor = false;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
+            // 
+            // btnCategory
+            // 
+            this.btnCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnCategory.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCategory.FlatAppearance.BorderSize = 0;
+            this.btnCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCategory.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategory.ForeColor = System.Drawing.Color.White;
+            this.btnCategory.Location = new System.Drawing.Point(0, 240);
+            this.btnCategory.Name = "btnCategory";
+            this.btnCategory.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnCategory.Size = new System.Drawing.Size(250, 60);
+            this.btnCategory.TabIndex = 4;
+            this.btnCategory.Text = "📂 Danh mục";
+            this.btnCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCategory.UseVisualStyleBackColor = false;
+            this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
+            // 
+            // btnInventory
+            // 
+            this.btnInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnInventory.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInventory.FlatAppearance.BorderSize = 0;
+            this.btnInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInventory.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInventory.ForeColor = System.Drawing.Color.White;
+            this.btnInventory.Location = new System.Drawing.Point(0, 180);
+            this.btnInventory.Name = "btnInventory";
+            this.btnInventory.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnInventory.Size = new System.Drawing.Size(250, 60);
+            this.btnInventory.TabIndex = 3;
+            this.btnInventory.Text = "📦 Nguyên liệu";
+            this.btnInventory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInventory.UseVisualStyleBackColor = false;
+            this.btnInventory.Click += new System.EventHandler(this.btnInventory_Click);
+            // 
+            // panelUser
+            // 
+            this.panelUser.Controls.Add(this.ptbUser);
+            this.panelUser.Controls.Add(this.lbUser);
+            this.panelUser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelUser.Location = new System.Drawing.Point(0, 0);
+            this.panelUser.Name = "panelUser";
+            this.panelUser.Size = new System.Drawing.Size(250, 180);
+            this.panelUser.TabIndex = 2;
             // 
             // ptbUser
             // 
@@ -101,123 +201,23 @@
             this.lbUser.TabIndex = 1;
             this.lbUser.Text = "Lê Minh Vương";
             // 
-            // panelUser
+            // panelHeader
             // 
-            this.panelUser.Controls.Add(this.ptbUser);
-            this.panelUser.Controls.Add(this.lbUser);
-            this.panelUser.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelUser.Location = new System.Drawing.Point(0, 0);
-            this.panelUser.Name = "panelUser";
-            this.panelUser.Size = new System.Drawing.Size(250, 180);
-            this.panelUser.TabIndex = 2;
+            this.panelHeader.BackColor = System.Drawing.Color.LightGray;
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Location = new System.Drawing.Point(250, 0);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(811, 100);
+            this.panelHeader.TabIndex = 0;
             // 
-            // btnInventory
+            // panelMain
             // 
-            this.btnInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.btnInventory.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInventory.FlatAppearance.BorderSize = 0;
-            this.btnInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInventory.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInventory.ForeColor = System.Drawing.Color.White;
-            this.btnInventory.Location = new System.Drawing.Point(0, 180);
-            this.btnInventory.Name = "btnInventory";
-            this.btnInventory.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnInventory.Size = new System.Drawing.Size(250, 60);
-            this.btnInventory.TabIndex = 3;
-            this.btnInventory.Text = "📦 Nguyên liệu";
-            this.btnInventory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInventory.UseVisualStyleBackColor = false;
-            this.btnInventory.Click += new System.EventHandler(this.btnInventory_Click);
-            // 
-            // btnCategory
-            // 
-            this.btnCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.btnCategory.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCategory.FlatAppearance.BorderSize = 0;
-            this.btnCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCategory.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCategory.ForeColor = System.Drawing.Color.White;
-            this.btnCategory.Location = new System.Drawing.Point(0, 240);
-            this.btnCategory.Name = "btnCategory";
-            this.btnCategory.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnCategory.Size = new System.Drawing.Size(250, 60);
-            this.btnCategory.TabIndex = 4;
-            this.btnCategory.Text = "📂 Danh mục";
-            this.btnCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCategory.UseVisualStyleBackColor = false;
-            this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
-            // 
-            // btnUser
-            // 
-            this.btnUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.btnUser.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUser.FlatAppearance.BorderSize = 0;
-            this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUser.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUser.ForeColor = System.Drawing.Color.White;
-            this.btnUser.Location = new System.Drawing.Point(0, 300);
-            this.btnUser.Name = "btnUser";
-            this.btnUser.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnUser.Size = new System.Drawing.Size(250, 60);
-            this.btnUser.TabIndex = 5;
-            this.btnUser.Text = "👤 Nhân viên";
-            this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUser.UseVisualStyleBackColor = false;
-            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
-            // 
-            // btnMenu
-            // 
-            this.btnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.btnMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMenu.FlatAppearance.BorderSize = 0;
-            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenu.ForeColor = System.Drawing.Color.White;
-            this.btnMenu.Location = new System.Drawing.Point(0, 360);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnMenu.Size = new System.Drawing.Size(250, 60);
-            this.btnMenu.TabIndex = 6;
-            this.btnMenu.Text = "🍽 Menu";
-            this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenu.UseVisualStyleBackColor = false;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
-            // 
-            // btnSession
-            // 
-            this.btnSession.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.btnSession.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSession.FlatAppearance.BorderSize = 0;
-            this.btnSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSession.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSession.ForeColor = System.Drawing.Color.White;
-            this.btnSession.Location = new System.Drawing.Point(0, 420);
-            this.btnSession.Name = "btnSession";
-            this.btnSession.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnSession.Size = new System.Drawing.Size(250, 60);
-            this.btnSession.TabIndex = 7;
-            this.btnSession.Text = "🪑 Phiên bàn";
-            this.btnSession.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSession.UseVisualStyleBackColor = false;
-            this.btnSession.Click += new System.EventHandler(this.btnSession_Click);
-            // 
-            // btnTable
-            // 
-            this.btnTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.btnTable.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTable.FlatAppearance.BorderSize = 0;
-            this.btnTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTable.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTable.ForeColor = System.Drawing.Color.White;
-            this.btnTable.Location = new System.Drawing.Point(0, 480);
-            this.btnTable.Name = "btnTable";
-            this.btnTable.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnTable.Size = new System.Drawing.Size(250, 60);
-            this.btnTable.TabIndex = 8;
-            this.btnTable.Text = "📋 Bàn";
-            this.btnTable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTable.UseVisualStyleBackColor = false;
-            this.btnTable.Click += new System.EventHandler(this.btnTable_Click);
+            this.panelMain.BackColor = System.Drawing.Color.White;
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(250, 100);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(811, 568);
+            this.panelMain.TabIndex = 1;
             // 
             // btnBill
             // 
@@ -227,7 +227,7 @@
             this.btnBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBill.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBill.ForeColor = System.Drawing.Color.White;
-            this.btnBill.Location = new System.Drawing.Point(0, 540);
+            this.btnBill.Location = new System.Drawing.Point(0, 480);
             this.btnBill.Name = "btnBill";
             this.btnBill.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnBill.Size = new System.Drawing.Size(250, 60);
@@ -250,9 +250,9 @@
             this.Text = "AdminDashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelSidebar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbUser)).EndInit();
             this.panelUser.ResumeLayout(false);
             this.panelUser.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbUser)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -269,8 +269,8 @@
         private System.Windows.Forms.Button btnCategory;
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Button btnMenu;
-        private System.Windows.Forms.Button btnSession;
         private System.Windows.Forms.Button btnTable;
+        private System.Windows.Forms.Button btnShift;
         private System.Windows.Forms.Button btnBill;
     }
 }

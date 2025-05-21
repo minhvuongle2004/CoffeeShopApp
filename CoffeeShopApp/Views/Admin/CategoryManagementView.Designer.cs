@@ -63,10 +63,9 @@
             this.panel4.Controls.Add(this.txtDanhMuc);
             this.panel4.Controls.Add(this.lbDanhMuc);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(4, 4);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(287, 39);
+            this.panel4.Size = new System.Drawing.Size(215, 32);
             this.panel4.TabIndex = 0;
             // 
             // txtDanhMuc
@@ -75,11 +74,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDanhMuc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDanhMuc.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDanhMuc.Location = new System.Drawing.Point(0, 27);
-            this.txtDanhMuc.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDanhMuc.Location = new System.Drawing.Point(0, 22);
             this.txtDanhMuc.Multiline = true;
             this.txtDanhMuc.Name = "txtDanhMuc";
-            this.txtDanhMuc.Size = new System.Drawing.Size(221, 36);
+            this.txtDanhMuc.Size = new System.Drawing.Size(166, 30);
             this.txtDanhMuc.TabIndex = 8;
             // 
             // lbDanhMuc
@@ -88,9 +86,8 @@
             this.lbDanhMuc.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbDanhMuc.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDanhMuc.Location = new System.Drawing.Point(0, 0);
-            this.lbDanhMuc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDanhMuc.Name = "lbDanhMuc";
-            this.lbDanhMuc.Size = new System.Drawing.Size(98, 27);
+            this.lbDanhMuc.Size = new System.Drawing.Size(79, 22);
             this.lbDanhMuc.TabIndex = 3;
             this.lbDanhMuc.Text = "Danh mục";
             // 
@@ -100,9 +97,8 @@
             this.panel2.Controls.Add(this.btnSearch);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(894, 49);
+            this.panel2.Size = new System.Drawing.Size(670, 40);
             this.panel2.TabIndex = 2;
             // 
             // txtSearch
@@ -111,10 +107,10 @@
             this.txtSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtSearch.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.Location = new System.Drawing.Point(0, 0);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(734, 49);
+            this.txtSearch.Size = new System.Drawing.Size(550, 40);
             this.txtSearch.TabIndex = 0;
             this.txtSearch.Text = "Tìm kiếm...";
             // 
@@ -125,10 +121,10 @@
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(734, 0);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(27, 5, 4, 5);
+            this.btnSearch.Location = new System.Drawing.Point(550, 0);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(20, 4, 3, 4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(160, 49);
+            this.btnSearch.Size = new System.Drawing.Size(120, 40);
             this.btnSearch.TabIndex = 1;
             this.btnSearch.Text = "Tìm kiếm";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -138,10 +134,9 @@
             // 
             this.panel3.Controls.Add(this.dgvDanhMuc);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(4, 252);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(3, 205);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(894, 241);
+            this.panel3.Size = new System.Drawing.Size(670, 196);
             this.panel3.TabIndex = 13;
             // 
             // dgvDanhMuc
@@ -177,7 +172,6 @@
             this.dgvDanhMuc.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDanhMuc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDanhMuc.Location = new System.Drawing.Point(0, 0);
-            this.dgvDanhMuc.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDanhMuc.MultiSelect = false;
             this.dgvDanhMuc.Name = "dgvDanhMuc";
             this.dgvDanhMuc.ReadOnly = true;
@@ -185,7 +179,7 @@
             this.dgvDanhMuc.RowHeadersWidth = 51;
             this.dgvDanhMuc.RowTemplate.Height = 30;
             this.dgvDanhMuc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDanhMuc.Size = new System.Drawing.Size(894, 241);
+            this.dgvDanhMuc.Size = new System.Drawing.Size(670, 196);
             this.dgvDanhMuc.TabIndex = 0;
             this.dgvDanhMuc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhMuc_CellContentClick);
             // 
@@ -217,12 +211,11 @@
             this.tableLayoutPanel3.Controls.Add(this.btnSua, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.btnXoa, 2, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 98);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 79);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(287, 87);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(215, 72);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // btnThem
@@ -232,10 +225,10 @@
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(7, 6);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnThem.Location = new System.Drawing.Point(5, 5);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(80, 49);
+            this.btnThem.Size = new System.Drawing.Size(60, 40);
             this.btnThem.TabIndex = 0;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
@@ -248,10 +241,10 @@
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(101, 6);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnSua.Location = new System.Drawing.Point(75, 5);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(80, 49);
+            this.btnSua.Size = new System.Drawing.Size(60, 40);
             this.btnSua.TabIndex = 1;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
@@ -264,10 +257,10 @@
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(195, 6);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnXoa.Location = new System.Drawing.Point(145, 5);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(85, 49);
+            this.btnXoa.Size = new System.Drawing.Size(65, 40);
             this.btnXoa.TabIndex = 2;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
@@ -278,10 +271,10 @@
             this.panel1.Controls.Add(this.tableLayoutPanel2);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(4, 5);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(3, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(894, 238);
+            this.panel1.Size = new System.Drawing.Size(670, 194);
             this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -293,14 +286,13 @@
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.panel4, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 49);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 40);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(894, 189);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(670, 154);
             this.tableLayoutPanel2.TabIndex = 8;
             // 
             // tableLayoutPanel1
@@ -311,21 +303,20 @@
             this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(902, 497);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(676, 404);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // CategoryManagementView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(902, 497);
+            this.ClientSize = new System.Drawing.Size(676, 404);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CategoryManagementView";
             this.Text = "CategoryManagementView";
             this.panel4.ResumeLayout(false);

@@ -145,5 +145,31 @@ namespace CoffeeShopApp.ServicesUser
             TotalAmount = 0;
             UpdateTotal();
         }
+        // Thêm phương thức này vào lớp OrderCartManager
+        public List<CoffeeShopAPI.Models.Menu> GetMenuItems()
+        {
+            List<CoffeeShopAPI.Models.Menu> menuItems = new List<CoffeeShopAPI.Models.Menu>();
+
+            foreach (Control control in cartContainer.Controls)
+            {
+                if (control is TableLayoutPanel row && row.Tag is int menuId)
+                {
+                    // Vì từ bảng danh sách OrderCart, ta không có trực tiếp đối tượng Menu
+                    // Ta cần tìm đối tượng Menu được lưu trong Tag của các control khác
+
+                    // Kiểm tra từng control trong row
+                    foreach (Control childControl in row.Controls)
+                    {
+                        if (childControl.Tag is CoffeeShopAPI.Models.Menu childMenu)
+                        {
+                            menuItems.Add(childMenu);
+                            break; // Tìm thấy menu trong row này, dừng tìm kiếm
+                        }
+                    }
+                }
+            }
+
+            return menuItems;
+        }
     }
 }
